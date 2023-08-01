@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #f8f9fa; /* Set header background color */
+    }
+    .publication {
+      margin-bottom: 40px;
+    }
+
+    .publication img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .publication-citation {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .publication-citation p {
+      margin: 0;
+    }
+
+    .publication-citation p:first-child {
+      font-weight: bold;
+    }
+
+    /* Add some padding and center the content */
+    .publication-container {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .publication-entry {
+      margin-bottom: 50px; /* Add a margin between each publication entry */
+    }
+
+    .publication-entry img {
+      max-height: 200px; /* Set the maximum height for the images */
+      width: 40%; /* Maintain the image's aspect ratio */
+      object-fit: cover; /* Scale the images to cover the container */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Lab Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Member</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Publications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Join us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+  <div class="container">
+    <h1>Publications</h1>
+  
+    <!-- Add publications here -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>2023</h2>
+      </div>
+    </div>
+  
+    <div class="row publication-entry">
+        <div class="col-md-4">
+          <img src="image/molbiolevol_39_12cover.jpeg" alt="Summary Figure 1">
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="lead">Brief description of the paper</p>
+              </div>
+              <div class="col-md-6">
+                <p><strong>Wen-Sui Lo*</strong>, Marianne Roca*, Mohannad Dardiry*, Marisa Mackie, Gabi Eberhardt, Hanh Witte, Ray Hong, Ralf J Sommer, James W Lightfoot</p>
+                <p>Evolution and Diversity of TGF-β Pathways are Linked with Novel Developmental and Behavioral Traits. </p>
+                <p><a href="https://academic.oup.com/mbe/article/39/12/msac252/6832141" target="_blank">MBE 2023</a></p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more publications here -->
+    <div class="row">
+      <div class="col-md-12">
+        <h2>2022</h2>
+      </div>
+    </div>
+  
+    <div class="row publication-entry">
+      <div class="col-md-4">
+        <img src="image/molbiolevol_38_12cover.jpeg" alt="Summary Figure 2">
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="lead">Brief description of the paper</p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>John Doe*</strong>, Jane Smith*, Alex Johnson*, Mary Adams, Chris Lee</p>
+            <p>Novel Findings in Genetics and Molecular Biology. </p>
+            <p><a href="https://example-link.com" target="_blank">Journal 2022</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Link to Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

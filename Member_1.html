@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Members</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar {
+      background-color: #f8f9fa; /* Set header background color */
+    }
+    .member-card {
+      border: none;
+      background-color: transparent;
+    }
+
+    /* Add this style to make the images square */
+    .member-card img {
+      max-width: 100%;
+      max-height: 200px;
+      width: 200px; /* Set the width to create a square */
+      height: 200px; /* Set the height to create a square */
+      object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    }
+
+    .member-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .member-unit {
+      font-size: 16px;
+      color: #777;
+    }
+
+    .member-research {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Lab Name</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Member</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Publications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Join us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+
+  <div class="container">
+    <h1>Lab Members</h1>
+
+    <!-- PI Members -->
+    <h2>PI</h2>
+    <div class="row row-cols-md-6 justify-content-start">
+      <div class="col-md-2 mb-4">
+        <div class="member-card">
+          <img src="image/hzd.jpeg" alt="PI 1" class="member-photo">
+          <p>PI Name 1</p>
+          <p>PI Affiliation 1</p>
+          <p>Research: PI Research Topic 1</p>
+        </div>
+      </div>
+      <div class="col-md-2 mb-4">
+        <div class="member-card">
+          <img src="image/wlo.jpeg" alt="PI 2" class="member-photo">
+          <p>PI Name 2</p>
+          <p>PI Affiliation 2</p>
+          <p>Research: PI Research Topic 2</p>
+        </div>
+      </div>
+      <!-- Add more PI members here -->
+    </div>
+
+    <!-- Doctoral Students -->
+    <h2>Doctoral Students</h2>
+    <div class="row row-cols-md-6 justify-content-start">
+      <div class="col-md-2 col-12">
+        <div class="member-card">
+          <img src="image/wlo.jpeg" alt="Doctoral Student 1" class="member-photo">
+          <p>Doctoral Student 1</p>
+          <p>2023 Biology</p>
+          <p>Research: Genome Evolution</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-12">
+        <div class="member-card">
+          <img src="doctoral2.jpg" alt="Doctoral Student 2" class="member-photo">
+          <p>Doctoral Student 2</p>
+          <p>2024 Chemistry</p>
+          <p>Research: Organic Synthesis</p>
+        </div>
+      </div>
+      <!-- Add more Doctoral Students here -->
+    </div>
+
+    <!-- Master Students -->
+    <h2>Master Students</h2>
+    <div class="row row-cols-md-6 justify-content-start">
+      <div class="col-md-2 col-12">
+        <div class="member-card">
+          <img src="master1.jpg" alt="Master Student 1" class="member-photo">
+          <p>Master Student 1</p>
+          <p>2023 Physics</p>
+          <p>Research: Quantum Mechanics</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-12">
+        <div class="member-card">
+          <img src="image/wlo.jpeg" alt="Master Student 2" class="member-photo">
+          <p>Master Student 2</p>
+          <p>2024 Computer Science</p>
+          <p>Research: Machine Learning</p>
+        </div>
+      </div>
+        <div class="col-md-2 col-12">
+          <div class="member-card">
+            <img src="master1.jpg" alt="Master Student 1" class="member-photo">
+            <p>Master Student 1</p>
+            <p>2023 Physics</p>
+            <p>Research: Quantum Mechanics</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-12">
+          <div class="member-card">
+            <img src="master2.jpg" alt="Master Student 2" class="member-photo">
+            <p>Master Student 2</p>
+            <p>2024 Computer Science</p>
+            <p>Research: Machine Learning</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-12">
+            <div class="member-card">
+              <img src="master2.jpg" alt="Master Student 2" class="member-photo">
+              <p>Master Student 2</p>
+              <p>2024 Computer Science</p>
+              <p>Research: Machine Learning</p>
+            </div>
+          </div>
+            <div class="col-md-2 col-12">
+              <div class="member-card">
+                <img src="master1.jpg" alt="Master Student 1" class="member-photo">
+                <p>Master Student 1</p>
+                <p>2023 Physics</p>
+                <p>Research: Quantum Mechanics</p>
+              </div>
+            </div>
+            <div class="col-md-2 col-12">
+              <div class="member-card">
+                <img src="image/wlo.jpeg" alt="Master Student 2" class="member-photo">
+                <p>Master Student 2</p>
+                <p>2024 Computer Science</p>
+                <p>Research: Machine Learning</p>
+              </div>
+            </div>
+      <!-- Add more Master Students here -->
+    </div>
+
+
+  <!-- Link to Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
