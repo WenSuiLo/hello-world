@@ -21,55 +21,72 @@
     .navbar-subtitle p {
       margin: 0; /* Optional: Remove default margin for the subtitle */
     }
-    .publication {
-      margin-bottom: 40px;
-    }
-
-    .publication img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .publication-citation {
-      font-size: 14px;
+/* General styles that apply to both mobile and desktop */
+    .card {
+      border: none; /* Optional: Removes the border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
       margin-top: 10px;
     }
 
-    .publication-citation p {
-      margin: 0;
+    .card-img-top {
+      width: 100%;
+      height: auto;
     }
 
-    .publication-citation p:first-child {
-      font-weight: bold;
-    }
+    /* Desktop-specific styles */
+    @media (min-width: 992px) {
+      .card-body {
+        padding: 15px;
+      }
 
-    /* Add some padding and center the content */
-    .publication-container {
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .publication-entry {
-      margin-bottom: 50px; /* Add a margin between each publication entry */
-    }
+      .card-title {
+        font-size: 16px; /* Adjust the font size as needed */
+        color: #000000; /* Adjust the color as needed */
+        margin-bottom: 10px;
+      }
 
-    .publication-entry img {
-      max-height: 200px; /* Set the maximum height for the images */
-      width: 40%; /* Maintain the image's aspect ratio */
-      object-fit: cover; /* Scale the images to cover the container */
+      .card-summary {
+        display: block; /* Always display the summary on desktop */
+        font-size: 14px;
+        color: #383838;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 12px;
+        color: #555; /* Adjust the color as needed */
+      }
+    }
+        @media (max-width: 767px) {
+      .card-img-top {
+        width: 50%;
+        float: right;
+      }
+
+      .card-body {
+        width: 50%;
+        float: left;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .d-none.d-lg-block {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Lab Name</a>
+    <a class="navbar-brand" href="#">Nematode EcoEvo Lab</a>
     <div class="navbar-subtitle ml-3">
-      <p>Subtitle Line 1</p>
-      <p>Subtitle Line 2</p>
-      <p>Subtitle Line 3</p>
+      <p>Nematode-Microbe Interactions</p>
+      <p>Genetics and Genomic Evolution</p>
+      <p>@Northwest A&F University</p>
     </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,82 +94,105 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Research.html">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Member_1.html">Member</a>
+          <a class="nav-link" href="member.html">People</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="publication.html">Publications</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
       </ul>
     </div>
   </nav>   
   <div class="container">
-    <h1>Publications</h1>
-  
-    <!-- Add publications here -->
+    <br><br><br>
+  <h4>Select publications</h4>
+    <!-- Highlighted Articles Section -->
     <div class="row">
-      <div class="col-md-12">
-        <h2>2023</h2>
-      </div>
-    </div>
-  
-    <div class="row publication-entry">
-        <div class="col-md-4">
-          <img src="image/molbiolevol_39_12cover.jpeg" alt="Summary Figure 1">
-        </div>
-        <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-6">
-                <p class="lead">Brief description of the paper</p>
-              </div>
-              <div class="col-md-6">
-                <p><strong>Wen-Sui Lo*</strong>, Marianne Roca*, Mohannad Dardiry*, Marisa Mackie, Gabi Eberhardt, Hanh Witte, Ray Hong, Ralf J Sommer, James W Lightfoot</p>
-                <p>Evolution and Diversity of TGF-β Pathways are Linked with Novel Developmental and Behavioral Traits. </p>
-                <p><a href="https://academic.oup.com/mbe/article/39/12/msac252/6832141" target="_blank">MBE 2023</a></p>
-              </div>
+      <!-- Example of one highlighted article -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
+          <a href="https://academic.oup.com/mbe/article/39/12/msac252/6832141" target="_blank">
+            <img class="card-img-top" src="image/MBE_Lo_2022.png" alt="Summary Figure 1">
+            <div class="card-body">
+              <h5 class="card-title">Evolution and Diversity of TGF-β Pathways are Linked with Novel Developmental and Behavioral Traits</h5>
+              <p class="d-none d-lg-block">Linked with Novel Developmental and Behavioral Traits. An insightful study exploring...</p>
+              <p class="card-text"><strong>Wen-Sui Lo</strong>, Marianne Roca, Mohannad Dardiry, Marisa Mackie, Gabi Eberhardt, Hanh Witte, Ray Hong, Ralf J Sommer, James W Lightfoot</p>
+              <p class="card-text">Molecular Biology and Evolution, 2022</p>
             </div>
+          </a>
         </div>
+      </div>
+      <!-- CB_Lo_2022 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
+          <a href="https://www.sciencedirect.com/science/article/pii/S0960982222004900" target="_blank">
+            <img class="card-img-top" src="image/CU_Lo_2022.png" alt="Summary Figure 1">
+            <div class="card-body">
+              <h5 class="card-title">Synergistic interaction of gut microbiota enhances the growth of nematode through neuroendocrine signaling</h5>
+              <p class="d-none d-lg-block">
+                The bacterium <i>L. xylanilyticus</i> promotes fitness of its nematode host P. pacificus</p>
+              <p class="card-text"><strong>Wen-Sui Lo, Ziduan Han</strong>, Hanh Witte, Waltraud Röseler, Ralf J. Sommer</p>
+              <p class="card-text">Current Biology, 2022</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- MBE_han_2022 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
+          <a href="https://academic.oup.com/mbe/article/39/2/msab370/6493351" target="_blank">
+            <img class="card-img-top" src="image/MBE_Han_2022.png" alt="Summary Figure 1">
+            <div class="card-body">
+              <h5 class="card-title">Horizontally Acquired Cellulases Assist the Expansion of Dietary Range in Pristionchus Nematodes</h5>
+              <p class="d-none d-lg-block">The integration of horizontally acquired genes into the complex life history strategy of this soil nematode</p>
+              <p class="card-text"><strong>Ziduan Han</strong>, Bogdan Sieriebriennikov, Vladislav Susoy, <strong>Wen-Sui Lo</strong>, Catia Igreja, Chuanfu Dong, Aileen Berasategui, Hanh Witte, Ralf J Sommer</p>
+              <p class="card-text"> Molecular Biology and Evolution, 2022</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Genetics_2020 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
+          <a href="https://academic.oup.com/genetics/article/216/4/947/6065858" target="_blank">
+            <img class="card-img-top" src="image/genetic_2020.jpeg" alt="Summary Figure 1">
+            <div class="card-body">
+              <h5 class="card-title">Improving Transgenesis Efficiency and CRISPR-Associated Tools Through Codon Optimization and Native Intron Addition in <i></i>Pristionchus</i> Nematodes</h5>
+              <p class="d-none d-lg-block">Linked with Novel Developmental and Behavioral Traits. An insightful study exploring...</p>
+              <p class="card-text"><strong></strong>Ziduan Han*, Wen-Sui Lo*</strong>, James W Lightfoot, Hanh Witte, Shuai Sun, Ralf J Sommer</p> 
+              <p class="card-text"> Genetics, 2020</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Add more highlighted articles here -->
     </div>
 
-    <!-- Add more publications here -->
+
+    <!-- PI Publications Section -->
     <div class="row">
-      <div class="col-md-12">
-        <h2>2022</h2>
+      <div class="col-12">
+        <h2>Publications by Prof. Wen-Sui Lo</h2>
+        <a href="google-scholar-link" target="_blank">Google Scholar Profile</a>
+        <!-- List publications here -->
+      </div>
+      <div class="col-12">
+        <h2>Publications by Prof. Ziduan Han</h2>
+        <a href="google-scholar-link" target="_blank">Google Scholar Profile</a>
+        <!-- List publications here -->
       </div>
     </div>
-  
-    <div class="row publication-entry">
-      <div class="col-md-4">
-        <img src="image/molbiolevol_38_12cover.jpeg" alt="Summary Figure 2">
-      </div>
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="lead">Brief description of the paper</p>
-          </div>
-          <div class="col-md-6">
-            <p><strong>John Doe*</strong>, Jane Smith*, Alex Johnson*, Mary Adams, Chris Lee</p>
-            <p>Novel Findings in Genetics and Molecular Biology. </p>
-            <p><a href="https://example-link.com" target="_blank">Journal 2022</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
+
 
   </div>
 

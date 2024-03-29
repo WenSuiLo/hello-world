@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <style>
-  <style>
     .navbar {
       background-color: #f8f9fa; /* Set header background color */
     }
@@ -29,58 +28,92 @@
       color: #fff;
       border-radius: 5px;
     }
-    #imageCarousel {
-      display: flex;
-      justify-content: center;
-    }
     .carousel-inner .carousel-item img {
       max-width: 100%;
       height: auto;
       margin: 0 auto;
     }
-    .panel-container {
-      background-color: #f8f9fa;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 600px; /* Change the width to your desired value */
-      height: 300px; /* Change the height to your desired value */
-      border-radius: 20px; /* Change the border-radius to make the panel rounded */
-      padding: 20px;
+    .carousel-container h5 {
+      color: #000306; /* Example: a shade of blue for headings */
       font-size: 14px;
     }
-    .panel-content {
+    .carousel-container p {
+      color: #555555; /* Example: a lighter gray for paragraphs */
+      line-height: 1; /* Set line height to 1*/
+      word-wrap: break-word;
+      font-size: 12px;
+    }
+    .we-are-hiring {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+    }
+    .contact-us-container {
+      display: flex;
+      align-items: center; /* Aligns items vertically in the center */
+      justify-content: space-between; /* Spacing between text and image */
       margin-top: 20px;
     }
-  /* Desktop version */
-  @media (min-width: 768px) {
-    .carousel-inner .carousel-item img {
-      height: 400px; /* Set the desired height for images on larger screens */
+    .contact-us {
+      flex: 1; /* Allows text section to grow */
+      padding: 15px;
     }
-  }
+    .university-photo {
+      flex: 1; /* Allows photo section to grow */
+      padding: 15px;
+    }
+    .university-photo img {
+      max-width: 100%;
+      height: auto;
+    }
+    .photo-caption {
+      font-style: italic; /* Adds an italic font style to caption */
+      color: #555; /* Adjusts the color to a subtle grey */
+      text-align: center; /* Centers the text */
+      margin-top: 8px; /* Adds a little space between the image and the caption */
+    }
+    /* Desktop version */
+    @media (min-width: 992px) {
+      .main-content {
+        display: flex;
+        flex-wrap: wrap; /* Allow elements to wrap as needed */
+      }
+      .carousel-container, .news-container{
+        flex: 0 0 25%; /* Adjust the width of the carousel and lab intro */
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: 10%;
+        margin-top: 50px;
+      }
+      .lab-introduction-container {
+        flex: 0 0 50%; /* Adjust the width of the carousel and lab intro */
+        max-width: 50%;
+        margin-left: 10%; /* Increase left margin */
+      }
+    }
 
     /* Mobile-friendly adjustments */
-    @media (max-width: 767px) {
-      .carousel-inner .carousel-item img {
-        height: 50vh; /* Set image height to occupy half of the screen height on mobile */
-      }
-      .panel-container {
+    @media (max-width: 991px) {
+      .carousel-container, .news-container, .lab-introduction-container {
         width: 100%; /* Full width on mobile */
-        height: auto; /* Adjust height automatically based on content */
-        position: static; /* Remove fixed position on mobile */
-        margin-top: 20px; /* Add margin to separate from carousel on mobile */
+        margin-left: 0; /* Reset left margin for mobile */
       }
     }
+    .lab-introduction-container {
+      padding: 20px;
+    }
+  </style>
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Lab Name</a>
+    <a class="navbar-brand" href="#">Nematode EcoEvo Lab</a>
     <div class="navbar-subtitle ml-3">
-      <p>Subtitle Line 1</p>
-      <p>Subtitle Line 2</p>
-      <p>Subtitle Line 3</p>
+      <p>Nematode-Microbe Interactions</p>
+      <p>Genetics and Genomic Evolution</p>
+      <p>@Northwest A&F University</p>
     </div>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,13 +122,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Research.html">Research</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Member_1.html">Member</a>
+          <a class="nav-link" href="member.html">People</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="publication.html">Publications</a>
@@ -103,65 +136,119 @@
         <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
       </ul>
     </div>
   </nav>  
 
-  <!-- Carousel -->
-  <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#imageCarousel" data-slide-to="1"></li>
-      <li data-target="#imageCarousel" data-slide-to="2"></li>
-      <!-- Add more carousel indicators here if needed -->
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img id="image1" src="image/slowpoke.jpeg" alt="Image 1" class="d-block img-fluid">
-        <div class="carousel-caption">Image 1 slowpoke</div>
+  <!-- Main content -->
+  <div class="main-content">
+    <div class="lab-introduction-container">
+      <div class="lab-introduction">
+        <h3>Welcome to the Nematode EcoEvo Lab</h3>
+        <p>Welcome to the Nematode EcoEvo Lab, where we delve into the fascinating world of nematodes, using <i>Pristionchus pacificus</i> as our primary model organism. At the heart of our research lies the integration of bioinformatics and molecular biology techniques, enabling us to explore the functional genomics and evolutionary journeys of these intriguing creatures. We are particularly intrigued by the complex interplay between nematodes and their environmental microbes. Our studies extend beyond <i>Pristionchus pacificus</i> to a wider range of free-living and plant-parasitic nematodes.</p>
+        
+        <p>Under the guidance of Professors Wen-Sui Lo and Ziduan Han, our lab focuses on key research areas:</p>
+        <ul>
+          <li><a href="link-to-research-page#nematode-microbiome-interaction">Nematode-Microbiome Interaction</a>: Unraveling the composition of natural nematode microbiomes and their influence on nematode physiology.</li>
+          <li><a href="link-to-research-page#nematode-genome-evolution">Nematode Genome Evolution</a>: Deciphering the evolutionary patterns within nematode gene regulatory networks.</li>
+          <li><a href="link-to-research-page#plant-parasitic-nematode">Plant Parasitic Nematodes</a>: Investigating the biology of nematodes that parasitize plants, aiming to understand their impact and control.</li>
+        </ul>
       </div>
-      <div class="carousel-item">
-        <img src="image/good_friend.jpeg" alt="Image 2" class="d-block img-fluid">
-        <div class="carousel-caption">good_friend</div>
+      <div class="we-are-hiring">
+        <h3>We Are Hiring</h3>
+        <p>Join our dynamic team at the Nematode EcoEvo Lab! We are currently seeking passionate individuals for positions as postdoctoral researchers, PhD, and Master's candidates. If you're interested in contributing to groundbreaking research in nematology, we would love to hear from you.</p>
+        <p>Please feel free to reach out to our Principal Investigators for more information:</p>
+        <ul>
+          <li>Prof. Wen-Sui Lo: <a href="mailto:wlo[at]nwafu[dot]edu[dot]cn">wlo[at]nwafu[dot]edu[dot]cn</a></li>
+          <li>Prof. Ziduan Han: <a href="mailto:zhan[at]nwafu[dot]edu[dot]cn">zhan[at]nwafu[dot]edu[dot]cn</a></li>
+        </ul>
       </div>
-      <div class="carousel-item">
-        <img src="image/Shiny-Slowpoke.webp" alt="Image 3" class="d-block img-fluid">
-        <div class="carousel-caption">Shiny slowpoke</div>
+      <!-- Contact Us Section -->
+      <div class="contact-us-container">
+        <div class="contact-us">
+          <h3>Contact Us</h3>
+          <p>For more information, please visit us at:</p>
+          <address>
+            Northwest A&F University, South Campus<br>
+            Yangling, Shaanxi, China
+          </address>
+          <!-- Add any additional contact information here -->
+        </div>
+        <div class="university-photo">
+          <img src="image/Qinling.jpg" alt="lab view">
+          <p class="photo-caption">Our lab enjoys a stunning view, and on clear days, the Qinling Mountains grace the horizon.</p>
+        </div>
       </div>
-      <!-- Add more carousel items here if needed -->
     </div>
-    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    
+    <!-- Carousel container -->
+    <div class="carousel-container">
+      <!-- Carousel -->
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#imageCarousel" data-slide-to="1"></li>
+          <li data-target="#imageCarousel" data-slide-to="2"></li>
+          <!-- Add more carousel indicators here if needed -->
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="image1" src="image/rick-original.webp" alt="Image 1" class="d-block img-fluid">
+            <div class="carousel-caption">Image 1 slowpoke</div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/morty-original.webp" alt="Image 2" class="d-block img-fluid">
+            <div class="carousel-caption">good_friend</div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/snowball-original.webp" alt="Image 3" class="d-block img-fluid">
+            <div class="carousel-caption">Shiny slowpoke</div>
+          </div>
+          <!-- Add more carousel items here if needed -->
+        </div>
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        <!-- Existing carousel code -->
+    <!-- News container -->
+    <p><strong>  </strong></p>
+          <p><strong>2024 Highlights</strong></p>
+          <p><strong>November</strong>
+          : Xiaoying Liu joins as an undergraduate project student.</p>
+          <p><strong>September</strong>
+          :Bingxue Li starts as our new Lab Manager.</p>
+
+          <p><strong>August</strong>
+          : Wensui Lo secures a grant from the National Natural Science Foundation of China.</p>
+
+          <p><strong>July</strong>
+          :Wenjie Li joins as a Master's student.</p>
+
+          <p><strong>June</strong>
+          :Ning Yang and Zhidong Wang join as undergraduate project students.</p>
+
+          <p><strong>May</strong>
+          :Our lab officially opens. Qi Ma joins as a doctoral student.</p>
+          <p><strong>2023 Highlights</strong></p>
+
+        <!-- Add more recent news here -->
+      </div>
+    </div>  
   </div>
 
-  <!-- Recent News Panel -->
-  <div class="panel-container">
-    <h5>Recent News</h5>
-    <div class="panel-content">
-      <p><strong>June 3, 2023</strong></p>
-      <p>New Research Paper Published: "Evolution and Diversity of TGF-β Pathways"</p>
 
-      <p><strong>May 28, 2023</strong></p>
-      <p>Lab Member Awarded "Best Young Scientist of the Year"</p>
-
-      <p><strong>May 20, 2023</strong></p>
-      <p>Lab Receives Grant for Innovative Research Project</p>
-
-      <!-- Add more recent news here -->
+  <footer>
+    <div class="container text-center">
+      <p>© 2024 Nematode EcoEvo Lab. All rights reserved.</p>
     </div>
-  </div>
+  </footer>
+
 
   <!-- Link to Bootstrap JS and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
