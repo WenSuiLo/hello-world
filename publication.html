@@ -59,18 +59,18 @@
     }
         @media (max-width: 767px) {
       .card-img-top {
-        width: 50%;
-        float: right;
+        width: 100%;
+        order: 1; 
       }
 
       .card-body {
-        width: 50%;
-        float: left;
+        width: 100%;
+        order: 2; 
       }
 
       .card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
       }
 
       .d-none.d-lg-block {
@@ -117,61 +117,82 @@
   <h4>Select publications</h4>
     <!-- Highlighted Articles Section -->
     <div class="row">
-      <!-- Example of one highlighted article -->
+      <!-- NC_2024_Lo&Han -->
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
         <div class="card h-100">
           <a href="https://academic.oup.com/mbe/article/39/12/msac252/6832141" target="_blank">
-            <img class="card-img-top" src="image/MBE_Lo_2022.png" alt="Summary Figure 1">
+            <img class="card-img-top" src="image/pub/MBE_Lo_2022.png" alt="Summary Figure 1">
             <div class="card-body">
               <h5 class="card-title">Evolution and Diversity of TGF-β Pathways are Linked with Novel Developmental and Behavioral Traits</h5>
               <p class="d-none d-lg-block">Linked with Novel Developmental and Behavioral Traits. An insightful study exploring...</p>
-              <p class="card-text"><strong>Wen-Sui Lo</strong>, Marianne Roca, Mohannad Dardiry, Marisa Mackie, Gabi Eberhardt, Hanh Witte, Ray Hong, Ralf J Sommer, James W Lightfoot</p>
-              <p class="card-text">Molecular Biology and Evolution, 2022</p>
+              <p class="card-text"><strong>Wen-Sui Lo</strong>, Ralf J Sommer#, <strong>Ziduan Han#</strong>. <strong>Nature Communication </strong> 2024</p>
             </div>
           </a>
+        </div>
+      </div>
+      <!-- MBE_2022_Lo -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="image/pub/MBE_Lo_2022.png" alt="Cover image for the publication on TGF-β Pathways">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://academic.oup.com/mbe/article/39/12/msac252/6832141" target="_blank">
+                Evolution and Diversity of TGF-β Pathways are Linked with Novel Developmental and Behavioral Traits
+              </a>
+            </h5>
+            <p class="card-text">
+              <strong>Wen-Sui Lo</strong>, Marianne Roca, Mohannad Dardiry, Marisa Mackie, Gabi Eberhardt, Hanh Witte, Ray Hong, Ralf J Sommer, James W Lightfoot. <strong>Molecular Biology and Evolution</strong> 2022
+            </p>
+            <p class="card-summary d-none d-lg-block">The duplication of the duplicated TGF-β Pathways genes are linked with Novel Developmental and Behavioral Traits.</p>   
+          </div>            
         </div>
       </div>
       <!-- CB_Lo_2022 -->
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
         <div class="card h-100">
-          <a href="https://www.sciencedirect.com/science/article/pii/S0960982222004900" target="_blank">
-            <img class="card-img-top" src="image/CU_Lo_2022.png" alt="Summary Figure 1">
-            <div class="card-body">
-              <h5 class="card-title">Synergistic interaction of gut microbiota enhances the growth of nematode through neuroendocrine signaling</h5>
-              <p class="d-none d-lg-block">
-                The bacterium <i>L. xylanilyticus</i> promotes fitness of its nematode host P. pacificus</p>
-              <p class="card-text"><strong>Wen-Sui Lo, Ziduan Han</strong>, Hanh Witte, Waltraud Röseler, Ralf J. Sommer</p>
-              <p class="card-text">Current Biology, 2022</p>
+          <img class="card-img-top" src="image/pub/CU_Lo_2022.png" alt="Summary Figure 1">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://www.sciencedirect.com/science/article/pii/S0960982222004900" target="_blank">
+              Synergistic interaction of gut microbiota enhances the growth of nematode through neuroendocrine signaling
+              </a>
+            </h5>
+            <p class="card-text">
+                <strong>Wen-Sui Lo, Ziduan Han</strong>, Hanh Witte, Waltraud Röseler, Ralf J. Sommer. <strong>Current Biology</strong> 2022</p>           
+            <p class="d-none d-lg-block">
+                The bacterium <i>L. xylanilyticus</i> promotes fitness of its nematode host <i>P. pacificus</i></p>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <!-- MBE_han_2022 -->
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-        <div class="card h-100">
-          <a href="https://academic.oup.com/mbe/article/39/2/msab370/6493351" target="_blank">
-            <img class="card-img-top" src="image/MBE_Han_2022.png" alt="Summary Figure 1">
-            <div class="card-body">
-              <h5 class="card-title">Horizontally Acquired Cellulases Assist the Expansion of Dietary Range in Pristionchus Nematodes</h5>
-              <p class="d-none d-lg-block">The integration of horizontally acquired genes into the complex life history strategy of this soil nematode</p>
-              <p class="card-text"><strong>Ziduan Han</strong>, Bogdan Sieriebriennikov, Vladislav Susoy, <strong>Wen-Sui Lo</strong>, Catia Igreja, Chuanfu Dong, Aileen Berasategui, Hanh Witte, Ralf J Sommer</p>
-              <p class="card-text"> Molecular Biology and Evolution, 2022</p>
-            </div>
-          </a>
+        <!-- MBE_han_2022 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card h-100">
+            
+              <img class="card-img-top" src="image/pub/MBE_Han_2022.png" alt="Summary Figure 1">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="https://academic.oup.com/mbe/article/39/2/msab370/6493351" target="_blank">
+                  Horizontally Acquired Cellulases Assist the Expansion of Dietary Range in Pristionchus Nematodes
+                </a>
+              </h5>
+                <p class="card-text"><strong>Ziduan Han</strong>, Bogdan Sieriebriennikov, Vladislav Susoy, <strong>Wen-Sui Lo</strong>, Catia Igreja, Chuanfu Dong, Aileen Berasategui, Hanh Witte, Ralf J Sommer.  <strong>Molecular Biology and Evolution</strong> 2022</p>
+                <p class="d-none d-lg-block">The integration of horizontally acquired genes into the complex life history strategy of <i>P. pacificus</i></p>
+              </div>
+          </div>
         </div>
-      </div>
       <!-- Genetics_2020 -->
       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-        <div class="card h-100">
-          <a href="https://academic.oup.com/genetics/article/216/4/947/6065858" target="_blank">
-            <img class="card-img-top" src="image/genetic_2020.jpeg" alt="Summary Figure 1">
+        <div class="card h-100">       
+            <img class="card-img-top" src="image/pub/genetic_2020.jpeg" alt="Summary Figure 1">
             <div class="card-body">
-              <h5 class="card-title">Improving Transgenesis Efficiency and CRISPR-Associated Tools Through Codon Optimization and Native Intron Addition in <i></i>Pristionchus</i> Nematodes</h5>
+              <h5 class="card-title">
+                <a href="https://academic.oup.com/genetics/article/216/4/947/6065858" target="_blank">
+                Improving Transgenesis Efficiency and CRISPR-Associated Tools Through Codon Optimization and Native Intron Addition in <i></i>Pristionchus</i> Nematodes
+              </a>
+              </h5>
+              <p class="card-text"><strong>Ziduan Han*, Wen-Sui Lo*</strong>, James W Lightfoot, Hanh Witte, Shuai Sun, Ralf J Sommer. <strong>Genetics</strong> 2020</p>
               <p class="d-none d-lg-block">Linked with Novel Developmental and Behavioral Traits. An insightful study exploring...</p>
-              <p class="card-text"><strong></strong>Ziduan Han*, Wen-Sui Lo*</strong>, James W Lightfoot, Hanh Witte, Shuai Sun, Ralf J Sommer</p> 
-              <p class="card-text"> Genetics, 2020</p>
             </div>
-          </a>
         </div>
       </div>
       <!-- Add more highlighted articles here -->
