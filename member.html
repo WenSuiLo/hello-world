@@ -40,6 +40,10 @@
     .member-info {
       text-align: center;
     }
+    .member-info p {
+      margin: 5px 0; /* Adds a little space between each detail */
+    }
+
   </style>
 </head>
 <body>
@@ -57,7 +61,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"></li>
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
@@ -74,7 +78,7 @@
           </li>
       </ul>
     </div>
-  </nav>  
+  </nav>   
 
   <div class="container">
     <h3>Lab Members</h3>
@@ -83,35 +87,35 @@
     <div class="row">
       <!-- Add members here -->
       <!-- Example: -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/rick-original.webp" alt="Wen-Sui Lo">
+          <img src="image/member/bager.webp" alt="Wen-Sui Lo">
           <div class="member-info">
             <p>Wen-Sui Lo</p>
             <p>PI</p>
             <p>Department</p>
             <p>Research Topic</p>
-            <p>Joined: Date</p>
+            <p>Joined: 2023 May</p>
           </div>
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/morty-original.webp" alt="Zidual Han">
+          <img src="image/member/racoon.webp" alt="Zidual Han">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>PI</p>
             <p>Department</p>
             <p>Research Topic</p>
-            <p>Joined: Date</p>
+            <p>Joined: 2022 June</p>
           </div>
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/snowball-original.webp" alt="PI Name">
+          <img src="image/member/black cat.webp" alt="PI Name">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>Position</p>
@@ -122,9 +126,9 @@
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/snowball-original.webp" alt="PI Name">
+          <img src="image/member/dogo.webp" alt="PI Name">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>Position</p>
@@ -135,9 +139,9 @@
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/snowball-original.webp" alt="PI Name">
+          <img src="image/member/goat .webp" alt="PI Name">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>Position</p>
@@ -148,9 +152,9 @@
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/snowball-original.webp" alt="PI Name">
+          <img src="image/member/intern.webp" alt="PI Name">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>Position</p>
@@ -161,9 +165,9 @@
         </div>
       </div>
       <!-- Repeat for other members -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-3 col-sm-6">
         <div class="member-card">
-          <img src="image/snowball-original.webp" alt="PI Name">
+          <img src="image/member/raccoon.webp" alt="PI Name">
           <div class="member-info">
             <p>Zidual Han</p>
             <p>Position</p>
@@ -176,29 +180,33 @@
 
     </div>
 
-
-
-    <!-- Other Members -->
-    <h2>Alumni</h2>
-    <div class="row">
-      <!-- Add other members here ordered by joining date -->
-      <!-- Example: -->
-      <div class="col-md-4 col-sm-6">
-        <div class="member-card">
-          <img src="path_to_member_image.jpg" alt="Member Name">
-          <div class="member-info">
-            <p>Member Name</p>
-            <p>Position</p>
-            <p>Department</p>
-            <p>Research Topic</p>
-            <p>Joined: Date</p>
+    <div class="container">
+      <h4>Alumni</h4>
+      <div class="row">
+        <!-- Example: Pikachu -->
+        <div class="col-md-3">
+          <div class="member-info p">
+            <p>Pikachu</p>
+            <p>Electric Type Specialist</p>
+            <p>2022 - 2023</p>
+            <p><strong>Current Position:</strong> Ambassador of Pokémon</p>
+          </div>
+        </div>
+        <!-- Example: Charmander -->
+        <div class="col-md-3">
+          <div class="member-info p">
+            <p>Charmander</p>
+            <p>Fire Type Specialist</p>
+            <p>2022 - 2023</p>
+            <p><strong>Current Position:</strong> Fire Safety Instructor</p>
           </div>
         </div>
       </div>
-      <!-- Repeat for other members -->
     </div>
-  </div>
 
-  <!-- Your existing Bootstrap JS and jQuery -->
+  <!-- Link to Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
